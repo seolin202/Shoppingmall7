@@ -4,8 +4,8 @@ const express = require('express');
 const app = express();
 // server.js파일에서 라우트를 만들고 상수화
 // require(경로)를 ordersRoute, producstRoute로 상수화
-const productsRoute = require('/api/routes/products');
-const ordersRoute = require('/api/routes/orders');
+const productsRoute = require('./api/routes/products');
+const ordersRoute = require('./api/routes/orders');
 
 app.use('/products', productsRoute);
 app.use('/orders', ordersRoute);
